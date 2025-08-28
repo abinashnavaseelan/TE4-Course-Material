@@ -71,10 +71,10 @@
           <tbody>
             <tr>
               <td>JavaScript (including HTML and CSS)</td>
-              <td>workt with it for 2 years front and a litel back</td>
+              <td>Worked with it for 2 years with frontend and a little backend</td>
             </tr>
             <tr>
-              <td>insert skill hear</td>
+              <td>insert skill here</td>
               <td>Lorem ipsum dolor sit amet.</td>
             </tr>
           </tbody>
@@ -82,7 +82,77 @@
 
       </section>
       <br>
+<form>
+<h2> Hire Me!</h2>
+    <fieldset>
+      <legend>Budget & Timeline</legend>
 
+      <label for="budget">Project Budget:</label>
+      <input type="number" id="budget" name="budget" placeholder="Enter budget" required>
+      <br><br>
+
+      <span>Urgency:</span><br>
+      <label>
+        <input type="radio" name="urgency" value="ASAP" required> ASAP
+      </label><br>
+      <label>
+        <input type="radio" name="urgency" value="Within 2 weeks"> Within 2 weeks
+      </label><br>
+      <label>
+        <input type="radio" name="urgency" value="Flexible"> Flexible
+      </label>
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend>Project Details</legend>
+
+      <label for="work-type">What type of work do you need?</label>
+      <select id="work-type" name="work-type" required>
+        <option value="" disabled selected>Select one</option>
+        <option value="website">Website</option>
+        <option value="webapp">Web App</option>
+        <option value="bugfixes">Bug Fixes</option>
+        <option value="consultation">Consultation</option>
+      </select>
+      <br><br>
+
+      <span>What technologies are involved?</span><br>
+      <label><input type="checkbox" name="tech[]" value="HTML"> HTML</label>
+      <label><input type="checkbox" name="tech[]" value="CSS"> CSS</label>
+      <label><input type="checkbox" name="tech[]" value="JavaScript"> JavaScript</label>
+      <label><input type="checkbox" name="tech[]" value="React"> React</label>
+      <label><input type="checkbox" name="tech[]" value="Node.js"> Node.js</label>
+      <br><br>
+
+      <label for="description">Describe your project:</label><br>
+      <textarea id="description" name="description" rows="5" cols="40" placeholder="Provide project details..." required></textarea>
+      <br><br>
+
+      <label for="file">Attach a file (optional):</label>
+      <input type="file" id="file" name="file">
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend>Your Information</legend>
+
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Your full name" required>
+      <br><br>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      <br><br>
+
+      <label for="company">Company / Organization:</label>
+      <input type="text" id="company" name="company" placeholder="Optional">
+    </fieldset>
+    <br>
+
+    <button type="submit">Send Request</button>
+  </form>
+  <br>
       <!DOCTYPE html>
     </header>
     <main></main>
