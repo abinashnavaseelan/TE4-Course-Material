@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+background: url("assets/Images/edgerunnerbackground.gif") no-repeat center center fixed;
+  background-size: cover;
+color: rgb(24, 255, 58);
+  font-family: jetbrains-mono, monospace;
+  scroll-behavior: smooth;
+}
+section {
+ height: 100vh;
+}

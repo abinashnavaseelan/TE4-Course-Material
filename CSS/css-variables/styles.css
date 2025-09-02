@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+.card {
+  background-color: var(--card-bg-color, #ff0202);
+  border: 1px solid var(--card-border-color, #ff0202);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(51, 0, 255, 0.1);
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
