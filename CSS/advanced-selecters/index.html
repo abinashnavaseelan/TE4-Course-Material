@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>𝗖𝗦𝗦 𝗦𝗲𝗹𝗲𝗰𝘁𝗼𝗿𝘀 𝗣𝗿𝗮𝗰𝘁𝗶𝗰𝗲</title>
-    <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Example</title>
+    <style>
+      .card {
+        width: 200px;
+        padding: 20px;
+        border: 4px solid #f2ee06;
+        margin-bottom: 30px;
+        box-sizing: border-box; /* keeps total width at 200px */
+        background-color: #eeff06;
+        border-radius: 8px;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
   <body>
-    <h1 id="main-title">Welcome to the Jungle! 🌿🐒🦟🐍🐊🌿</h1>
-
-    <p class="intro">Let's explore advanced CSS selectors</p>
-
-    <section class="animals">
-      <h2>Mammals</h2>
-      <ul>
-        <li class="highlight">Lion</li>
-        <li>Tiger</li>
-        <li>Bear</li>
-      </ul>
-
-      <h2>Birds</h2>
-      <ul>
-        <li>Eagle</li>
-        <li class="highlight">Parrot</li>
-        <li>Penguin</li>
-      </ul>
-    </section>
-
-    <footer>
-      <p>— Created by Mighty Explorer 😎</p>
-    </footer>
+    <div class="card">
+      <h2>This is my card</h2>
+      <p>
+        lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula
+        cursus vestibulum.
+      </p>
+    </div>
   </body>
 </html>
