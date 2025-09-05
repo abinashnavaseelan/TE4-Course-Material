@@ -1,6 +1,11 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+h1 {
+  border: 20px solid black;
+  font-size: 3rem;
+  margin: 20px;
+}
