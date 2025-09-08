@@ -27,6 +27,15 @@ header h1 {
   text-align: left;
   padding: 0px;
 }
+.header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
 .sidebar {
   grid-area: sidebar;
   background-color: rgb(255, 2, 2);
