@@ -7,7 +7,7 @@
 body {
   font-family: "Nunito", sans-serif;
   line-height: 1.6;
-  background: conic-gradient (rgb(37, 72, 109), #4a90e2);
+  background: conic-gradient(rgb(37, 72, 109), hsl(213, 40%, 81%));
   color: #333;
   padding: 20px;
   height: 100vh;
