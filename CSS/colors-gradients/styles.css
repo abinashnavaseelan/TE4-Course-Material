@@ -18,7 +18,7 @@ h1 {
 .gradient-box {
   width: 200px;
   height: 200px;
-  background: linear-gradient(90deg, #ff7f50, #6a5acd);
+  background: linear-gradient(90deg, #f7ff07, #6a5acd);
 }
 
 .multi-gradient {
@@ -26,11 +26,11 @@ h1 {
   height: 200px;
   background: linear-gradient(
     135deg,
-    #ff0000,
-    #ff7f00,
-    #ffff00,
-    #00ff00,
-    #0000ff
+    rgb(255, 255, 255),
+    #000000,
+    #8f80e1,
+    #e0ab31,
+    hsl(314, 100%, 69%)
   );
 }
 
