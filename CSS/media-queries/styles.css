@@ -1,0 +1,33 @@
+:root {
+  --bg: #f4f4f4;
+  --text: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 5vw, 2, 5rem);
+  text-align: center;
+}
+p {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    :root {
+      --bg: #333;
+      --text: #f4f4f4;
+    }
+  }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    transition: all 0.3s ease;
+  }
+}
