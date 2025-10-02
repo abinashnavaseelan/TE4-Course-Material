@@ -69,7 +69,7 @@ function counter() {
 }
 
 const myCounter = counter();
-console.log(myCounter.increment()); // 1
-console.log(myCounter.increment()); // 2
-console.log(myCounter.reset()); // 0
-console.log(myCounter.increment()); // 1
+console.log(myCounter.increment());
+console.log(myCounter.increment());
+console.log(myCounter.reset());
+console.log(myCounter.increment());
