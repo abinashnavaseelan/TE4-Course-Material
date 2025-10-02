@@ -2,7 +2,7 @@
 
 console.log("Hello, world!");
 
-console.log("Scopes & Closures");
+console.log("Welcome to the Scopes & Closures Lesson!");
 
 //*  Teacher Example
 // const global = "I am a global variable";
@@ -50,6 +50,9 @@ function makeMultiplier(factor) {
     return x * factor;
   };
 }
+
+const double = makeMultiplier(2);
+console.log(double(5));
 
 function counter() {
   let count = 0;
