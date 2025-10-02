@@ -1,6 +1,7 @@
 "use strict";
 
 console.log("Hello, world!");
+console.log("JS-04 Control Flow");
 
 let age = "18";
 let hasAticket = true;

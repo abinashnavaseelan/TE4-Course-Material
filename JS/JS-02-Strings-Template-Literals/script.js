@@ -1,6 +1,7 @@
 "use strict";
 
 console.log("Hello, World!");
+console.log("Strings and Template Literals");
 
 const first_name = "John";
 const middle_name = "M.";

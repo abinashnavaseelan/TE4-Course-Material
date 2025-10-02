@@ -2,6 +2,8 @@
 
 console.log("Hello, world!");
 
+console.log("DOM Basics");
+
 const h1 = document.getElementById("title");
 console.log(h1);
 

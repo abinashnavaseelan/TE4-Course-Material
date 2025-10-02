@@ -1,5 +1,7 @@
 console.log("Hello, world!");
 
+console.log("********** Objects **********");
+
 // const car = {
 //   maker: "Toyota",
 //   model: "Supra",

@@ -2,6 +2,8 @@
 
 console.log("Hello, world!");
 
+console.log("Advanced Functions in JavaScript");
+
 // Arrow function example
 const fn = (x) => x * x;
 console.log(fn(5)); // Example usage

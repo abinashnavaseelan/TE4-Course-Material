@@ -1,6 +1,9 @@
 "use strict";
 
 console.log("Hello, world!");
+
+console.log("Arrays");
+
 // Example "Reference" code
 // const items = ["Fried Chicken", "Banana", "Watermelon", "Koolaid"];
 // console.log(items.length);

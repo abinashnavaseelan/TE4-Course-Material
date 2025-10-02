@@ -1,6 +1,8 @@
 "use strict";
 
 console.log("Hello, world!");
+console.log("Welcome to the JavaScript Math Operators exercise.");
+
 // -> Exercise 1:
 let A = 25;
 let B = 15;

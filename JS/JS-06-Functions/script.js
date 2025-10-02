@@ -2,6 +2,8 @@
 
 console.log("Hello, world!");
 
+console.log("Functions in JavaScript");
+
 // * Functions
 // * Hoisted
 // * Declaration
@@ -47,7 +49,6 @@ function calulatescore(aliceScore, bobScore) {
 
   console.log(
     `Alice got a ${aliceGrade} with ${aliceScore} points and Bob got a ${bobGrade} with ${bobScore} points. ${
-    };
     aliceScore === bobScore ? "They tied!" : aliceScore > bobScore ? "Alice wins!" : "Bob wins!"
-  );
-}
+  };
+

@@ -1,4 +1,6 @@
 "use strict";
+console.log("Hello, World!");
+console.log("Variables and Data Types");
 
 let name = "Bob Smith";
 console.log(typeof name, name);

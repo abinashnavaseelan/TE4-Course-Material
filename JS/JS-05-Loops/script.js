@@ -1,6 +1,7 @@
 "use strict";
 
 console.log("Hello, world!");
+console.log("Loops");
 
 // for loop "Example"
 /// for (let i = 1; i <= 5; i++) {
