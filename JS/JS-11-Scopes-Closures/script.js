@@ -72,4 +72,4 @@ const myCounter = counter();
 console.log(myCounter.increment());
 console.log(myCounter.increment());
 console.log(myCounter.reset());
-console.log(myCounter.increment());
+console.log(myCounter.increment()); 
