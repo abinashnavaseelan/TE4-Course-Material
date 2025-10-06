@@ -1,18 +1,18 @@
-/* Light Theme */
+/* Light styles */
 :root {
-  --bg: #ffffff;
-  --text: #000;
-  --card: #fff;
-  --muted: #666;
-  --elevated: #ffffff;
+  --bg: #fafafa;
+  --text: #111111;
+  --card: #f3f4f6;
+  --muted: #4b5563;
+  --elevated: #f9fafb;
   --outline: #cccccc;
-  --brand: #0077ff;
+  --brand: #2563eb;
   --backdrop: rgba(0, 0, 0, 0.7);
   --chip: #111111;
   --chipText: #ffffff;
 }
 
-/* Base Elements */
+/* Base elements */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -20,8 +20,7 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
 }
@@ -71,11 +70,10 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   gap: 0.75rem;
   list-style: none;
-  padding: 0;
 }
 
 .thumbs li {
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 0.75rem;
   overflow: hidden;
 }
@@ -122,17 +120,17 @@ body {
 
 .top-btn {
   position: fixed;
-  display: none;
-  bottom: 1rem;
   right: 1rem;
-  background: var(--chip);
-  color: var(--chipText);
-  border: none;
+  bottom: 1rem;
+  display: none;
   padding: 0.6rem 0.7rem;
   border: none;
   border-radius: 50%;
+  background: var(--chip);
+  color: var(--chipText);
   cursor: pointer;
 }
+
 .top-btn:focus {
   outline: 3px solid var(--brand);
   outline-offset: 2px;
@@ -142,45 +140,45 @@ body {
   position: absolute;
   left: -9999px;
 }
-/* System Dark Preferences */
+
+/* system dark preferences */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #000000;
+    --bg: #0f172a;
     --text: #ffffff;
-    --card: #1e1e1e;
-    --muted: #999999;
-    --elevated: #333333;
-    --outline: #444444;
-    --brand: #3399ff;
-    --backdrop: rgba(255, 255, 255, 0.7);
-    --chip: #eeeeee;
-    --chipText: #000000;
+    --card: #181f2f;
+    --muted: #4b5563;
+    --elevated: #424547;
+    --outline: #232222;
+    --brand: #2563eb;
+    --backdrop: rgba(0, 0, 0, 0.7);
+    --chip: #454545;
+    --chipText: #ffffff;
   }
 }
 
-/* Manual Overrides For Themes*/
+/* manual overrides for theme */
 body.light {
-  --bg: #ffffff;
-  --text: #000000;
-  --card: #ffffff;
-  --muted: #666666;
-  --elevated: #ffffff;
+  --bg: #fafafa;
+  --text: #111111;
+  --card: #f3f4f6;
+  --muted: #4b5563;
+  --elevated: #f9fafb;
   --outline: #cccccc;
-  --brand: #0077ff;
+  --brand: #2563eb;
   --backdrop: rgba(0, 0, 0, 0.7);
   --chip: #111111;
   --chipText: #ffffff;
 }
-
 body.dark {
-  --bg: #000000;
+  --bg: #0f172a;
   --text: #ffffff;
-  --card: #1e1e1e;
-  --muted: #999999;
-  --elevated: #333333;
-  --outline: #444444;
-  --brand: #3399ff;
-  --backdrop: rgba(255, 255, 255, 0.7);
-  --chip: #eeeeee;
-  --chipText: #000000;
+  --card: #181f2f;
+  --muted: #4b5563;
+  --elevated: #424547;
+  --outline: #232222;
+  --brand: #2563eb;
+  --backdrop: rgba(0, 0, 0, 0.7);
+  --chip: #454545;
+  --chipText: #ffffff;
 }
