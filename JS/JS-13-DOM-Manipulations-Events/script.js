@@ -93,16 +93,101 @@ const renderThumbs = (items) => {
   items.forEach((p, i) => {
     const li = document.createElement("li");
     li.innerHTML = `<img
-    src="${p.thumb}"
-    alt="${p.alt}"
-    loading="lazy"
-    deconding="async"
-    data-index="${i}"
-    tabindex="0"
-     />`;
+        src="${p.thumb}"
+        alt="${p.alt}"
+        loading="lazy"
+        decoding="async"
+        data-index="${i}"
+        tabindex="0"
+         />`;
     frag.appendChild(li);
   });
   thumbsEL.appendChild(frag);
 };
 
 renderThumbs(photos);
+
+// Helpers
+const setMain = (index) => {
+  const { src, alt, caption } = photos[index];
+  mainImage.src = src;
+  mainImage.alt = alt;
+  captionEL.textContent = caption;
+
+  thumbsEL
+    .querySelectorAll("li")
+    .forEach((li) => li.classList.remove("active"));
+  const activeLi = thumbsEL.children[index];
+  if (activeLi) activeLi.classList.add("active");
+
+  mainImage.dataset.activeIndex = String(index);
+};
+
+setMain(0);
+
+const clammpIndex = (index) => {
+  return (index + photos.length) % photos.length;
+};
+
+// Delegation for thumbs
+thumbsEL.addEventListener("click", (e) => {
+  const img = e.target.closest("img");
+  if (!img) return;
+  setMain(Number(img.dataset.index));
+});
+
+thumbsEL.addEventListener("keydown", (e) => {
+  if ((e.key === "Enter" || e.key === " ") && e.target.closest("img")) {
+    const img = e.target.closest("img");
+    setMain(Number(img.dataset.index));
+  }
+});
+
+// Keyboard navigation
+document.addEventListener("keydown", (e) => {
+  if (lightbox.open) return;
+  if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+    const current = Number(mainImage.dataset.activeIndex || 0);
+    const next =
+      e.key === "ArrowRight"
+        ? clammpIndex(current + 1)
+        : clammpIndex(current - 1);
+    setMain(next);
+    const activeThumb = thumbsEL.querySelector(
+      "img" + `[data-index="${next}"]`
+    );
+    if (activeThumb) activeThumb.focus();
+  }
+});
+// Lightbox
+
+mainImage.addEventListener("click", () => {
+  lightboxImage.src = mainImage.src;
+  lightboxImage.alt = mainImage.alt;
+  lightboxCaption.textContent = captionEL.textContent;
+  lightbox.showModal();
+});
+
+closeLightBox.addEventListener("click", () => {
+  lightbox.close();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && lightbox.hasAttribute("open")) lightbox.close();
+});
+
+lightbox.addEventListener("click", (e) => {
+  // Only close if the click is directly on the dialog (outside its children)
+  if (e.target === lightbox) {
+    lightbox.close();
+  }
+});
+
+// back to top button
+window.addEventListener("scroll", () => {
+  topBtn.style.display = window.scrollY > 100 ? "block" : "none";
+});
+
+topBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
