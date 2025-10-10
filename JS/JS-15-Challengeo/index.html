@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Quotes App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-deco" aria-hidden="true"></div>
+
+    <main class="wrap" role="main">
+      <!-- main card -->
+      <section class="glass" aria-labelledby="appTitle">
+        <header class="app-head">
+          <div class="title">
+            <h1 id="appTitle">Quotes — glassmorphism</h1>
+            <div class="subtitle">
+              Random quotes from
+              <a
+                href="https://api.quotable.io/random"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Quotable API</a
+              >
+            </div>
+          </div>
+          <div class="chip" aria-hidden="true">
+            🎴 <span class="chip-text">Inspire</span>
+          </div>
+        </header>
+
+        <div class="quote-frame" aria-live="polite" id="quoteFrame">
+          <div>
+            <blockquote id="quote">Loading a thoughtful quote…</blockquote>
+            <div class="author" id="author">—</div>
+          </div>
+        </div>
+
+        <div class="attribution">
+          Click <strong>New quote</strong> to get another. You can copy a quote
+          or tweet it.
+        </div>
+      </section>
+
+      <!-- sidebar / controls -->
+      <aside class="side">
+        <div class="glass controls-card" aria-hidden="false">
+          <div class="meta">Controls</div>
+          <div class="controls" role="group" aria-label="Quote actions">
+            <button id="newQuote" class="btn-primary" aria-live="polite">
+              New quote
+            </button>
+            <button id="copy" class="btn-ghost" title="Copy quote">Copy</button>
+          </div>
+          <div class="status" id="status" aria-atomic="true"></div>
+        </div>
+
+        <div class="glass" style="padding: 14px; text-align: center">
+          <div style="font-weight: 700">Share</div>
+          <div
+            style="
+              display: flex;
+              gap: 8px;
+              justify-content: center;
+              margin-top: 10px;
+            "
+          >
+            <button id="tweet" class="btn-ghost">Tweet</button>
+          </div>
+        </div>
+
+        <div class="glass" style="padding: 12px; text-align: center">
+          <div style="font-weight: 700">About</div>
+          <div class="about-desc">
+            Single-file demo split into separate files: HTML, CSS, JS.
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

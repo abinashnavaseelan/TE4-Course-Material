@@ -46,7 +46,7 @@ console.log("Page Loaded Successfully");
 
 greetlater("Hello, Async World!");
 async function greetlater(message) {
-  await new Promise((resolve) => setTimeout(resolve, 5000));
+  await new Promise((resolve) => setTimeout(resolve, 3000));
   console.log(message);
 }
 
