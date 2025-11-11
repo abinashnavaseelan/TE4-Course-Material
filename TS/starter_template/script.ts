@@ -1,8 +1,7 @@
-console.log("Hello World");
+import { projectInfo } from "./modules/data.js";
 
-let myName: string = "Abinash";
-let myNumber: number = 12;
+const { name, version, description } = projectInfo;
 
-const message = `${myName} is ${myNumber} years old.`;
-
-console.log(message);
+console.log(`Project: ${name}`);
+console.log(`Version: ${version}`);
+console.log(`About: ${description}`);
